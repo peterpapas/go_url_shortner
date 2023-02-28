@@ -1,76 +1,97 @@
-/* Default styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
 }
-
 h1 {
   text-align: center;
   margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  color: #333;
 }
 
 form {
-  max-width: 500px;
+  max-width: 600px;
   margin: 50px auto;
   background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
+  border: none;
+  padding: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
+  color: #333;
 }
 
 input[type="text"] {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  margin-bottom: 20px;
 }
 
 button[type="submit"] {
   display: block;
   margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #4caf50;
+  padding: 15px 30px;
+  background-color: #4285f4;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 button[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: #3367d6;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
 }
 
 /* Breakpoints for mobile and tablet screens */
+/* Breakpoints for mobile and tablet screens */
 @media (max-width: 768px) {
   h1 {
-    font-size: 28px;
+    font-size: 36px;
     margin-top: 30px;
   }
 
   form {
     max-width: 90%;
     margin: 30px auto;
-    padding: 15px;
+    padding: 30px;
   }
 
   input[type="text"] {
-    font-size: 14px;
+    font-size: 18px;
+    margin-bottom: 15px;
   }
 
   button[type="submit"] {
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+
+  p {
+    font-size: 18px;
   }
 }
 
