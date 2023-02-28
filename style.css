@@ -1,3 +1,4 @@
+/* Default styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f1f1f1;
@@ -48,4 +49,50 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #3e8e41;
+}
+
+/* Breakpoints for mobile and tablet screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  form {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  form {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    font-size: 12px;
+  }
+
+  button[type="submit"] {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 8px 16px;
+  }
 }
